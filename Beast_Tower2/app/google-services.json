@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311770707709",
+    "project_id": "beasttower-bc6b0",
+    "storage_bucket": "beasttower-bc6b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311770707709:android:6adc1f2071fd40c033f094",
+        "android_client_info": {
+          "package_name": "com.rafael.beast_tower"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcPwU3ZcdWJYPbZL5EWpqK9qgVsuJbuAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

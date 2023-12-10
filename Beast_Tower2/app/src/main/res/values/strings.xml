@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Beast Tower</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoicmFmYS00NzgwIiwiYSI6ImNsb2Q1NnR6YjAxbm4yanJ5dzQ1ZnljZXUifQ.1vg_ISvhGhQzycuk6Nh1sw</string>
+</resources>

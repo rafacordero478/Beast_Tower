@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/personales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/preguntas_tb" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/personales">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textarpro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personales"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="AREAS PROBLEMATICAS"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/area1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="PECHO DEBIL"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_below="@+id/textarpro"
+                android:textStyle="bold"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/area2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="BRAZOS DELGADOS"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_below="@+id/area1"
+                android:textStyle="bold"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/area3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="BARRIGA CERVEZA"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_below="@+id/area2"
+                android:textStyle="bold"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/area4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="PIERNAS DELGADAS"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_below="@+id/area3"
+                android:textStyle="bold"
+                android:checked="false"/>
+
+            <TextView
+                android:id="@+id/textdietas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/area4"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="QUE DIETAS SIGUES?"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/vegetariana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#673AB7"
+                    android:text="VEGETARIANA: Excluye carne animal"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/mediterranea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#673AB7"
+                    android:text="MEDITERRANEA: Rica en Alimentos de origen vegetal"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/ninguno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#673AB7"
+                    android:text="NINGUNO"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textazucar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select1"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="TOMAS ALIMENTOS AZUCARADOS?"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/no_tanto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4DFF01"
+                    android:text="NO TANTO"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/veces_semana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4DFF01"
+                    android:text="3-5 VECES POR SEMANA"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/todos_dias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4DFF01"
+                    android:text="CASI TODOS LOS DIAS"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textagua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select2"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="CUANTA AGUA BEBES AL DIA?"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/select3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textagua"
+                >
+                <RadioButton
+                    android:id="@+id/vasos26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="2-6 VASOS"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/vasos710"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="7-10 VASOS"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/mas_vasos10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
+                    android:text="MAS DE 10 VASOS"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textlugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actihobby"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="ELIGE DONDE QUIERES ENTRENAR"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/select4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textlugar"
+                >
+
+                <RadioButton
+                    android:id="@+id/casa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F44336"
+                    android:text="CASA"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/gimnasio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F44336"
+                    android:text="GIMNASIO"
+                    android:textStyle="bold"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textdeporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select1"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="QUE DEPORTES TE INTERESAN?"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/select5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textdeporte"
+                >
+
+                <RadioButton
+                    android:id="@+id/boxeo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00B0FF"
+                    android:text="BOXEO"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/art_marcial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00B0FF"
+                    android:text="ARTES MARCIALES"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/correr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00B0FF"
+                    android:text="CORRER"
+                    android:textStyle="bold"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textequipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select2"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="A QUE EQUIPO TIENES ACCESO?"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/select6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textequipo"
+                >
+
+                <RadioButton
+                    android:id="@+id/no_equip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DA00FF"
+                    android:text="NINGUNO"
+                    android:textStyle="bold"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/basico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DA00FF"
+                    android:text="EQUIPO BASICO"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/completo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DA00FF"
+                    android:text="EQUIPO COMPLETO"
+                    android:textStyle="bold"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/texttiempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select2"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="CUANTO TIEMPO DEDICARIAS A UNA SESION?"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/select7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texttiempo"
+                >
+
+                <RadioButton
+                    android:id="@+id/minutos_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF9800"
+                    android:text="30 MINUTOS"
+                    android:textStyle="bold"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/minutos_45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF9800"
+                    android:text="45 MINUTOS"
+                    android:textStyle="bold"
+                    />
+
+                <RadioButton
+                    android:id="@+id/hora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF9800"
+                    android:text="1 HORA"
+                    android:textStyle="bold"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textmeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buscar"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="ELIGE TU META"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"/>
+
+            <CheckBox
+                android:id="@+id/perder_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF1100"
+                android:text="PERDER PESO"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+            <CheckBox
+                android:id="@+id/ganar_musculo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF1100"
+                android:text="GANAR MUSCULO"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+            <CheckBox
+                android:id="@+id/definir_cuerpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF1100"
+                android:text="DEFINIR TU CUERPO"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textobjetivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select2"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/brawler"
+                android:text="MARCA TUS OBJETIVOS ADICIONALES"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                />
+
+            <CheckBox
+                android:id="@+id/obj1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="MEJORAR SUEÑO"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_below="@+id/textobjetivo"
+                android:textStyle="bold"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/obj2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="FORMAR HABITO FISICO"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_below="@+id/obj1"
+                android:textStyle="bold"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/obj3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="DESARROLLAR AUTODISCIPLINA"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_below="@+id/obj2"
+                android:textStyle="bold"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/obj4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="SENTIRME MAS SANO"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_below="@+id/obj3"
+                android:textStyle="bold"
+                android:checked="false"/>
+
+            <CheckBox
+                android:id="@+id/obj5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="REDUCIR ESTRES"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:layout_below="@+id/obj4"
+                android:textStyle="bold"
+                android:checked="false"/>
+
+            <TextView
+                android:id="@+id/txtInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CUESTIONARIO"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
+
+            <Button
+                android:id="@+id/obtener1"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="bt_obtener"
+                android:text="OBTENER PLAN"
+                android:textSize="25dp"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
